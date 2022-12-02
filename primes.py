@@ -4,10 +4,11 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+import pytest
+
 def primes(number_of_primes):
     if (number_of_primes <= 0):
-        print("ValueError")
-        return
+        raise ValueError
     list = []
     number = 2
     while (len(list) != number_of_primes):
